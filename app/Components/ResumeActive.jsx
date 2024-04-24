@@ -1,4 +1,4 @@
-import CV from "../assets/cv.png"
+import CV from "../Assets/cv.png"
 import Image from "next/image"
 const ResumeActive = () => {
   console.log(CV);
