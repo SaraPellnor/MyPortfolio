@@ -10,7 +10,7 @@ const Home = () => {
   const [hoverd, setHoverd] = useState("");
   const hasWindow = typeof window !== "undefined";
 console.log(hasWindow);
-  const screenHeight = hasWindow ? window.innerHeight : 844.
+  const screenHeight = hasWindow ? window.innerHeight : window.innerHeight
   
   return (
     <div style={{ height: `${screenHeight}px` }} className={`flex flex-wrap w-full md:h-[100vh] font-400 font-josefin-sans md:text-6xl text-4xl border-solid border-[2px] border-black bg-black relative cursor-pointer`}>
