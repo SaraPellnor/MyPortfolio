@@ -11,12 +11,14 @@ const Home = () => {
   const [hoverd, setHoverd] = useState("");
 
   return (
-    <div className="flex flex-wrap w-full h-[92vh]  md:h-[100vh] font-400 font-josefin-sans md:text-6xl text-4xl border-solid border-[2px] border-black bg-black relative cursor-pointer">
+    <div className="flex justify-center items-center bg-black p-5">
+    <div className="flex flex-wrap w-full h-[100vh] font-400 font-josefin-sans md:text-6xl text-4xl border-solid border-[2px] border-black bg-black relative cursor-pointer">
       <Compass setHoverd={setHoverd} hoverd={hoverd} content={<GiCompass />} />
       <About setHoverd={setHoverd} hoverd={hoverd} content={"About"} />
       <Projects setHoverd={setHoverd} hoverd={hoverd} content={"Projects"} />
       <Resume setHoverd={setHoverd} hoverd={hoverd} content={"Resume"} />
       <Connect setHoverd={setHoverd} hoverd={hoverd} content={"Connect"} />
+    </div>
     </div>
   );
 };
