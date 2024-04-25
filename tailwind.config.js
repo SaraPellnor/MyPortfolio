@@ -16,10 +16,10 @@ module.exports = {
           "0%": { transform: "translateX(100%)" },
           "100%": { transform: "translateX(-100%)" },
         },
-        // fontFamily: {
-        //   "josefin-sans": ['"Josefin Sans"', "sans-serif"],
-        // }
       },
+    },
+    fontFamily: {
+      "josefin-sans": ['"Josefin Sans"', "sans-serif"],
     },
   },
   plugins: [],
