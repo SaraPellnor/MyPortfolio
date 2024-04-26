@@ -3,7 +3,8 @@
 # To get started with Next.js see: https://nextjs.org/docs/getting-started
 #
 name: Deploy Next.js site to Pages
-
+        
+            
 on:
   # Runs on pushes targeting the default branch
   push:
@@ -79,6 +80,9 @@ jobs:
         uses: actions/upload-pages-artifact@v3
         with:
           path: ./out
+      - name: Send Email Nodemailer
+        uses: cybervoid/action-send-email-nodemailer@v1.0
+            
 
   # Deployment job
   deploy:
