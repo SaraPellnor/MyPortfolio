@@ -19,10 +19,10 @@
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #f5cbb0; /* Change this to your desired scrollbar handle color */
+  background: black; /* Change this to your desired scrollbar handle color */
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #f8b68e; /* Change this to your desired scrollbar handle color on hover */
+  background: #bcaf4c; /* Change this to your desired scrollbar handle color on hover */
 }

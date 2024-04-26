@@ -12,7 +12,7 @@ const CompassActive = () => {
       <div
         onMouseEnter={() => setDisplay("1")}
         onMouseLeave={() => setDisplay("")}
-        className="md:absolute top-4 left-4 flex flex-col gap-3 justify-center items-center rounded-lg md:h-2/5 md:w-2/5 w-full h-1/4 bg-purple-400 hover:h-[45%] hover:w-full md:hover:w-[45%] duration-500 text-center p-3"
+        className="md:absolute top-4 left-4 flex flex-col gap-3 justify-center items-center rounded-lg md:h-2/5 md:w-2/5 w-full h-1/4 bg-[#f9e864] hover:h-[45%] hover:w-full md:hover:w-[45%] duration-500 text-center p-3"
       >
         <h3>Curious</h3>{" "}
         {display == "1" ? (
@@ -27,7 +27,7 @@ const CompassActive = () => {
       <div
         onMouseEnter={() => setDisplay("2")}
         onMouseLeave={() => setDisplay("")}
-        className="md:absolute top-4 right-4 flex flex-col gap-3 justify-center items-center rounded-lg md:h-2/5 md:w-2/5 h-2/5 w-full bg-orange-300 hover:h-[45%] hover:w-full md:hover:w-[45%] duration-500 text-center p-3 order-1"
+        className="md:absolute top-4 right-4 flex flex-col gap-3 justify-center items-center rounded-lg md:h-2/5 md:w-2/5 h-2/5 w-full bg-[#f9e864] hover:h-[45%] hover:w-full md:hover:w-[45%] duration-500 text-center p-3 order-1"
       >
         {" "}
         <h3>Creative</h3>{" "}
@@ -43,7 +43,7 @@ const CompassActive = () => {
       <div
         onMouseEnter={() => setDisplay("3")}
         onMouseLeave={() => setDisplay("")}
-        className="md:absolute bottom-4 left-4 flex flex-col gap-3 justify-center items-center rounded-lg md:h-2/5 md:w-2/5 w-full h-1/4 bg-orange-300 hover:h-[45%] hover:w-full md:hover:w-[45%] duration-500 text-center p-3"
+        className="md:absolute bottom-4 left-4 flex flex-col gap-3 justify-center items-center rounded-lg md:h-2/5 md:w-2/5 w-full h-1/4 bg-[#f9e864] hover:h-[45%] hover:w-full md:hover:w-[45%] duration-500 text-center p-3"
       >
         {" "}
         <h3>Positive</h3>{" "}
@@ -59,7 +59,7 @@ const CompassActive = () => {
       <div
         onMouseEnter={() => setDisplay("4")}
         onMouseLeave={() => setDisplay("")}
-        className="md:absolute bottom-4 right-4 flex flex-col gap-3 justify-center items-center rounded-lg md:h-2/5 md:w-2/5 w-full h-1/4 bg-purple-400 hover:h-[45%] hover:w-full md:hover:w-[45%] duration-500 text-center p-3"
+        className="md:absolute bottom-4 right-4 flex flex-col gap-3 justify-center items-center rounded-lg md:h-2/5 md:w-2/5 w-full h-1/4 bg-[#f9e864] hover:h-[45%] hover:w-full md:hover:w-[45%] duration-500 text-center p-3"
       >
         {" "}
         <h3>Problem Solver</h3>{" "}

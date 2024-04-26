@@ -1,6 +1,5 @@
 import { useState } from "react";
 import PropTypes from "prop-types";
-import { FaStar } from "react-icons/fa";
 import ResumeActive from "./ResumeActive";
 import { IoClose } from "react-icons/io5";
 
@@ -23,20 +22,15 @@ const Resume = ({ content, hoverd, setHoverd }) => {
   const activeStyle = () => {
     return active
       ? "w-full h-full z-20"
-      : "hover:text-7xl hover:text-yellow-500";
+      : "hover:text-7xl hover:bg-[#f9e864]";
   };
   return (
     <div
       onClick={() => !active && setActive(true)}
       onMouseLeave={() => setHoverd("")}
       onMouseEnter={() => setHoverd("4")}
-      className={`flex flex-col items-center justify-center border-solid border-[2px] border-black hover:z-20 transition-all duration-500 ease-in-out bg-white hover:bg-yellow-100 absolute bottom-0 left-0 ${customStyle()} ${activeStyle()}`}
+      className={`flex flex-col items-center justify-center border-solid border-[2px] border-black hover:z-20 transition-all duration-500 ease-in-out bg-white absolute bottom-0 left-0 ${customStyle()} ${activeStyle()}`}
     >
-      {hoverd == "4" && !active ? (
-        <FaStar className="animate-spin text-yellow-300 absolute md:static top-3 right-3 text-5xl" />
-      ) : (
-        ""
-      )}
       {active ? (
         <div className="h-full w-full flex flex-col justify-between">
           <ResumeActive />

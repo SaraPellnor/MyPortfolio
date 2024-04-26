@@ -8,20 +8,20 @@ const Compass = ({ content, hoverd, setHoverd }) => {
 
   const customStyle = () => {
     return hoverd === "3"
-      ? "top-[40%] bottom-[40%] right-[50%] left-[30%] rotate-180 text-green-500 text-5xl"
+      ? "top-[40%] bottom-[40%] right-[50%] left-[30%]"
       : hoverd === "2"
-      ? "top-[50%] bottom-[30%] right-[30%] left-[50%] rotate-90 text-red-500 text-5xl"
+      ? "top-[50%] bottom-[30%] right-[30%] left-[50%]"
       : hoverd === "4"
-      ? "top-[40%] bottom-[40%] right-[30%] left-[50%] -rotate-180 text-yellow-500 text-5xl"
+      ? "top-[40%] bottom-[40%] right-[30%] left-[50%]"
       : hoverd === "5"
-      ? "top-[30%] bottom-[50%] right-[50%] left-[30%] -rotate-90 text-purple-500 text-5xl"
+      ? "top-[30%] bottom-[50%] right-[50%] left-[30%]"
       : "top-[40%] bottom-[40%] right-[40%] left-[40%]";
   };
 
   const activeStyle = () => {
     return active
       ? " bg-black hover:static static top-[0%] left-[0%] right-[0%] bottom-[0%] rotate-0 hover:rotate-0 w-full h-full z-20"
-      : "absolute hover:rotate-45 z-10 hover:text-9xl";
+      : "absolute z-10 hover:scale-150";
   };
 
   return (
@@ -29,7 +29,7 @@ const Compass = ({ content, hoverd, setHoverd }) => {
       onMouseLeave={() => setHoverd("")}
       onMouseEnter={() => setHoverd("1")}
       onClick={() => !active && setActive(true)}
-      className={`p-[10px] flex justify-center items-center hover:z-20 text-pink-500 transition-all duration-500 ease-in-out ${customStyle()} ${activeStyle()}`}
+      className={`flex justify-center items-center hover:z-20 text-[100%] text-[#f9e864] transition-all duration-500 ease-in-out ${customStyle()} ${activeStyle()}`}
     >
       {active ? (
         <div className="h-full w-full flex flex-col justify-between">
@@ -42,8 +42,24 @@ const Compass = ({ content, hoverd, setHoverd }) => {
           </div>
           <CompassActive />{" "}
         </div>
+      ) : hoverd ? (
+        <div
+          className={`transition-all duration-500 ease-in-out ${
+            hoverd === "3"
+              ? "rotate-180"
+              : hoverd === "2"
+              ? "rotate-90"
+              : hoverd === "4"
+              ? "-rotate-180"
+              : hoverd === "5"
+              ? "-rotate-90"
+              : "hover:rotate-45 hover:scale-125"
+          }`}
+        >
+          {content}
+        </div>
       ) : (
-        content
+        ""
       )}
     </div>
   );

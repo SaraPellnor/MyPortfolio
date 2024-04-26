@@ -21,15 +21,15 @@ const Projects = ({ content, hoverd, setHoverd }) => {
 
   const activeStyle = () => {
     return active
-      ? "w-full h-full z-20"
-      : "hover:gap-2 hover:text-7xl hover:text-green-500";
+      ? "w-full h-full z-20 bg-[#f9e864]"
+      : "hover:gap-2 hover:text-7xl bg-white hover:bg-[#f9e864]";
   };
   return (
     <div
       onClick={() => !active && setActive(true)}
       onMouseLeave={() => setHoverd("")}
       onMouseEnter={() => setHoverd("3")}
-      className={`absolute top-0 right-0 flex flex-col items-center justify-center border-solid border-[2px] bg-white hover:bg-green-100 border-black hover:z-20 transition-all duration-500 ease-in-out ${customStyle()} ${activeStyle()}`}
+      className={`absolute top-0 right-0 flex flex-col items-center justify-center border-solid border-[2px] border-black hover:z-20 transition-all duration-500 ease-in-out ${customStyle()} ${activeStyle()}`}
     >
       {active ? (
         <div className="h-full w-full flex flex-col justify-between">

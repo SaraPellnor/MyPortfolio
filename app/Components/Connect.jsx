@@ -24,15 +24,15 @@ const Connect = ({ content, hoverd, setHoverd }) => {
 
   const activeStyle = () => {
     return active
-      ? "w-full h-full z-20"
-      : "hover:sm:text-7xl hover:text-6xl hover:font-bold text-4xl md:text-6xl hover:text-purple-500";
+      ? "w-full h-full z-20 bg-[#f9e864]"
+      : "hover:sm:text-7xl hover:text-6xl hover:font-bold bg-white hover:bg-[#f9e864] text-4xl md:text-6xl";
   };
   return (
     <div
     onClick={() => !active && setActive(true)}
       onMouseLeave={() => setHoverd("")}
       onMouseEnter={() => setHoverd("5")}
-      className={`flex flex-col absolute bottom-0 right-0 items-center justify-center text-center gap-3 border-solid border-[2px] border-black hover:z-20 bg-white hover:bg-purple-200 transition-all duration-500 ease-in-out ${customStyle()} ${activeStyle()}`}
+      className={`flex flex-col absolute bottom-0 right-0 items-center justify-center text-center gap-3 border-solid border-[2px] border-black hover:z-20 transition-all duration-500 ease-in-out ${customStyle()} ${activeStyle()}`}
     >
       {active ? (
         <div className="h-full w-full flex flex-col justify-between">
@@ -58,9 +58,9 @@ const Connect = ({ content, hoverd, setHoverd }) => {
       )}
       {hoverd == "5" && !active ? (
         <div className="text-black text-5xl flex justify-center gap-2">
-          <RiLinkedinLine className="hover:text-purple-500" />
-          <FiGithub className="hover:text-purple-500" />
-          <MdOutlineAlternateEmail className="hover:text-purple-500" />
+          <RiLinkedinLine className="hover:text-gray-600" />
+          <FiGithub className="hover:text-gray-600" />
+          <MdOutlineAlternateEmail className="hover:text-gray-600" />
         </div>
       ) : (
         ""
