@@ -3,7 +3,7 @@ export const sendEmail = async (data) => {
 
   try {
     const res = await fetch(apiEndpoint, {
-      method: "POST",
+      method: "GET",
       body: JSON.stringify(data),
     });
     const resData = await res.json();
