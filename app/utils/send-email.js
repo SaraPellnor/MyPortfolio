@@ -1,4 +1,5 @@
-export function sendEmail(data: any) {
+
+export function sendEmail(data) {
   const apiEndpoint = "/api/email";
 
   fetch(apiEndpoint, {
@@ -7,9 +8,9 @@ export function sendEmail(data: any) {
   })
     .then((res) => res.json())
     .then((response) => {
-      alert(response.message);
+      console.log(response.message);
     })
     .catch((err) => {
-      alert(err);
+      console.log(err);
     });
 }
