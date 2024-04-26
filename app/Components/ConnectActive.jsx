@@ -2,13 +2,15 @@
 
 import { useForm } from "react-hook-form";
 import { sendEmail } from "../utils/send-email";
+import { useState } from "react";
 
 const ConnectActive = () => {
   const { register, handleSubmit, reset } = useForm();
-
+const [messageSent, setMessageSent] = useState(false)
   function onSubmit(data) {
     sendEmail(data);
     reset();
+    setMessageSent(true);
   }
 
   return (
@@ -61,6 +63,7 @@ const ConnectActive = () => {
         <button className="hover:shadow-form rounded-md bg-white py-3 px-8 text-base font-semibold text-green-600 hover:scale-125 duration-500 outline-none">
           Submit
         </button>
+        {messageSent ? <p className="text-lg pt-2">Fun! Thanks!</p>:""}
       </div>
     </form>
     </div>
