@@ -10,6 +10,7 @@ const ConnectActive = () => {
   function onSubmit(data) {
     sendEmail(data);
     reset();
+    console.log("conpjkjb");
     setMessageSent(true);
   }
 
