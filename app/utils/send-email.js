@@ -12,5 +12,6 @@ console.log("hiii");
     })
     .catch((err) => {
       console.log(err);
+      console.log("feeeeeeel");
     });
 }
