@@ -16,7 +16,7 @@ const ConnectActive = () => {
   return (
     <div className="flex flex-col items-center justify-center p-15">
       <p className="text-xl py-2">{`I'll love to hear from you!`}</p>
-      <form onSubmit={handleSubmit(onSubmit)}>
+      <form method="POST" onSubmit={handleSubmit(onSubmit)}>
         <div className="mb-5">
           <label
             htmlFor="name"
