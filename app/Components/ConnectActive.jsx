@@ -8,7 +8,7 @@ const ConnectActive = () => {
 
   function onSubmit(data) {
     sendEmail(data);
-    reset()
+    reset();
   }
 
   return (
