@@ -4,21 +4,23 @@ import { useForm } from "react-hook-form";
 import { sendEmail } from "../utils/send-email";
 
 const ConnectActive = () => {
-  const { register, handleSubmit } = useForm();
+  const { register, handleSubmit, reset } = useForm();
 
   function onSubmit(data) {
     sendEmail(data);
+    reset()
   }
 
   return (
     <div className='flex flex-col items-center justify-center p-15'>
+<p className="text-xl py-2">{`I'll love to hear from you!`}</p>
     <form onSubmit={handleSubmit(onSubmit)}>
       <div className="mb-5">
         <label
           htmlFor="name"
           className="mb-3 block text-base font-medium text-black"
         >
-          Full Name
+          Full Name:
         </label>
         <input
           type="text"
@@ -32,7 +34,7 @@ const ConnectActive = () => {
           htmlFor="email"
           className="mb-3 block text-base font-medium text-black"
         >
-          Email Address
+         Your Email Address:
         </label>
         <input
           type="email"
@@ -46,7 +48,7 @@ const ConnectActive = () => {
           htmlFor="message"
           className="mb-3 block text-base font-medium text-black"
         >
-          Message
+          Message:
         </label>
         <textarea
           rows={4}
@@ -56,7 +58,7 @@ const ConnectActive = () => {
         ></textarea>
       </div>
       <div>
-        <button className="hover:shadow-form rounded-md bg-purple-500 py-3 px-8 text-base font-semibold text-white outline-none">
+        <button className="hover:shadow-form rounded-md bg-white py-3 px-8 text-base font-semibold text-green-600 hover:scale-125 duration-500 outline-none">
           Submit
         </button>
       </div>
