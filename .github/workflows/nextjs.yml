@@ -80,8 +80,6 @@ jobs:
         uses: actions/upload-pages-artifact@v3
         with:
           path: ./out
-      - name: Send Email Nodemailer
-        uses: cybervoid/action-send-email-nodemailer@v1.0
             
 
   # Deployment job
