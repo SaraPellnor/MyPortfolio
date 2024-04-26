@@ -1,6 +1,6 @@
 
 export function sendEmail(data) {
-  const apiEndpoint = "/api/email";
+  const apiEndpoint = "https://sarapellnor.github.io/MyPortfolio/api/email";
 console.log("hiii");
   fetch(apiEndpoint, {
     method: "POST",
