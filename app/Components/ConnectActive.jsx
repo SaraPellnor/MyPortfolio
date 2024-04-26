@@ -10,7 +10,6 @@ const ConnectActive = () => {
   function onSubmit(data) {
     sendEmail(data);
     reset();
-    console.log("conpjkjb");
     setMessageSent(true);
   }
 
@@ -64,9 +63,9 @@ const ConnectActive = () => {
           <button className="hover:shadow-form rounded-md bg-white py-3 px-8 text-base font-semibold text-green-600 hover:scale-125 duration-500 outline-none">
             Submit
           </button>
-          {messageSent ? <p className="text-lg pt-2">Fun! Thanks!</p> : ""}
         </div>
       </form>
+      {messageSent ? <p className="text-lg pt-2">Fun! Thanks!</p> : ""}
     </div>
   );
 };
