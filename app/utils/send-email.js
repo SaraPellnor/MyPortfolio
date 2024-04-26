@@ -5,7 +5,7 @@ export function sendEmail(data) {
 console.log("hiii");
   fetch(apiEndpoint, {
     method: "POST",
-    body: JSON.stringify(data),
+    body: data,
   })
     .then((res) => res.json())
     .then((response) => {
