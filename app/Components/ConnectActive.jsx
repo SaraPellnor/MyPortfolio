@@ -9,7 +9,7 @@ const ConnectActive = () => {
   const [messageSent, setMessageSent] = useState(false);
   function onSubmit(data) {
     sendEmail(data);
-    // reset();
+    reset();
     setMessageSent(true);
   }
 
