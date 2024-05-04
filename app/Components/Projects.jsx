@@ -32,10 +32,11 @@ const Projects = ({ content, hoverd, setHoverd }) => {
       className={`absolute top-0 right-0 flex flex-col items-center justify-center border-solid border-[2px] border-black hover:z-20 transition-all duration-500 ease-in-out ${customStyle()} ${activeStyle()}`}
     >
       {active ? (
-        <div className="h-full w-full flex flex-col justify-between">
-          <div className="w-full flex justify-end">
-              <IoClose className="hover:scale-125 duration-500"  onClick={() => setActive(false)} />
-          </div>
+        <div className="relative h-full w-full flex flex-col justify-between">
+          <IoClose
+            className="absolute top-0 right-0 hover:scale-125 duration-500 text-white"
+            onClick={() => setActive(false)}
+          />{" "}
           <ProjectsActive />
         </div>
       ) : (
