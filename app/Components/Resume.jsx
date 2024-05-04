@@ -32,7 +32,7 @@ const Resume = ({ content, hoverd, setHoverd }) => {
       className={`flex flex-col items-center justify-center border-solid border-[2px] border-black hover:z-20 transition-all duration-500 ease-in-out bg-white absolute bottom-0 left-0 ${customStyle()} ${activeStyle()}`}
     >
       {active ? (
-        <div className="h-full w-full flex flex-col justify-between">
+        <div className="h-full w-full flex justify-center items-center bg-[#FAFAFA]">
           <ResumeActive />
 
           <div className="absolute bottom-0 w-full flex justify-start">

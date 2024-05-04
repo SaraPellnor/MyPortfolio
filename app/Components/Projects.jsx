@@ -21,7 +21,7 @@ const Projects = ({ content, hoverd, setHoverd }) => {
 
   const activeStyle = () => {
     return active
-      ? "w-full h-full z-20 bg-[#f9e864]"
+      ? "w-full h-full z-20 bg-black"
       : "hover:gap-2 hover:text-7xl bg-white hover:bg-[#f9e864]";
   };
   return (

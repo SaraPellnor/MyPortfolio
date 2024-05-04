@@ -1,0 +1,34 @@
+{
+  "data": [
+    {
+      "projectName": "name",
+      "programingLanguages": "languages",
+      "link": "link",
+      "image": "/portfolio.png"
+    },
+    {
+      "projectName": "Daily Wayfinder",
+      "programingLanguages": "languages",
+      "link": "https://www.dailywayfinder.com/",
+      "image": "/wayfinder.png"
+    },
+    {
+      "projectName": "Portfolio",
+      "programingLanguages": "NextJS, Tailwind",
+      "link": "https://sarapellnor.se",
+      "image": "/portfolio.png"
+    },
+    {
+      "projectName": "Coconut",
+      "programingLanguages": "ReactJS, NodeJS, Stripe, MongoDB",
+      "link": "https://examensarbete.vercel.app",
+      "image": "/coconut.png"
+    },
+    {
+      "projectName": "name",
+      "programingLanguages": "languages",
+      "link": "link",
+      "image": "/portfolio.png"
+    }
+  ]
+}
