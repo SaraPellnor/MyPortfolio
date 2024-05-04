@@ -1,10 +1,10 @@
 {
   "data": [
     {
-      "projectName": "name",
-      "programingLanguages": "languages",
+      "projectName": "Chat App",
+      "programingLanguages": "NodeJS, ReactTS, SocketIo",
       "link": "link",
-      "image": "/portfolio.png"
+      "image": "/chatapp.png"
     },
     {
       "projectName": "Daily Wayfinder",
