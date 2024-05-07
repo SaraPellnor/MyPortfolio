@@ -37,9 +37,28 @@ const ConnectActive = () => {
         </div>
         <p>Fallow me on social medias</p>
         <div className=" text-5xl flex gap-5">
-          <RiLinkedinLine className="hover:text-pink-300" />
-          <FiGithub className="hover:text-pink-300" />
-          <MdOutlineAlternateEmail className="hover:text-pink-300" />
+          <RiLinkedinLine
+            onClick={() =>
+              window.open(
+                "https://linkedin.com/in/sara-pellnor-606822239",
+                "_blank"
+              )
+            }
+            className="hover:text-pink-300"
+          />
+          <FiGithub
+            onClick={() =>
+              window.open(
+                "https://github.com/SaraPellnor?tab=repositories",
+                "_blank"
+              )
+            }
+            className="hover:text-pink-300"
+          />
+          <a href="mailto:sara.pellnor@gmail.com?subject=Your%20Subject&body=Your%20Message">
+            {" "}
+            <MdOutlineAlternateEmail className="hover:text-pink-300" />
+          </a>
         </div>
         <p className="text-2xl text-slate-400 font-thin">© 2024 Sara Pellnor</p>
       </div>
