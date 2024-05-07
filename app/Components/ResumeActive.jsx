@@ -1,4 +1,4 @@
-import CV from "../Assets/cv.png";
+import CV from "../assets/cv.png";
 import Image from "next/image";
 import { FaFileDownload } from "react-icons/fa";
 
