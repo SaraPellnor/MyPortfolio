@@ -21,8 +21,7 @@ const ConnectActive = () => {
     <div className=" md:flex justify-center items-center overflow-hidden overflow-y-scroll scrollbar-track-gray-200 scrollbar-thumb-gray-500 hover:scrollbar-thumb-gray-600 h-full w-full">
       <div className="flex flex-col justify-center-center gap-7 text-start bg-purple-900 md:w-1/2 m-5 p-7 rounded-xl text-white md:text-[60%]">
         <h1 className="p-3">
-          {`Of course! Here's a more friendly and inviting version of your
-          message: "If you're considering reaching out, I'd be delighted to hear
+          {`If you're considering reaching out, I'd be delighted to hear
           from you about potential job opportunities or anything else you'd like
           to discuss.`}
         </h1>
