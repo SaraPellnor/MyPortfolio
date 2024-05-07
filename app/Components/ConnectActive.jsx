@@ -17,7 +17,6 @@ const ConnectActive = () => {
   }
 
   return (
-    // <div className=" h-full w-full">
     <div className=" md:flex justify-center items-center overflow-hidden overflow-y-scroll scrollbar-track-gray-200 scrollbar-thumb-gray-500 hover:scrollbar-thumb-gray-600 h-full w-full">
       <div className="flex flex-col justify-center-center gap-7 text-start bg-purple-900 md:w-1/2 m-5 p-7 rounded-xl text-white md:text-[60%]">
         <h1 className="p-3">
@@ -31,9 +30,9 @@ const ConnectActive = () => {
           <p>Sweden</p>
           <a
             className="text-pink-300 hover:text-slate-400"
-            href="mailto:sara.pellnor@gmail.com?subject=Your%20Subject&body=Your%20Message"
+            href="tel:+46730442444"
           >
-            sara.pellnor@gmail.com
+            0730 442 444
           </a>
         </div>
         <p>Fallow me on social medias</p>
@@ -79,7 +78,6 @@ const ConnectActive = () => {
       </div>
       {messageSent ? <p className="text-lg pt-2">Fun! Thanks!</p> : ""}
     </div>
-    // </div>
   );
 };
 
