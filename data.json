@@ -3,7 +3,7 @@
     {
       "projectName": "Chat App",
       "programingLanguages": "NodeJS, ReactTS, SocketIo",
-      "link": "link",
+      "link": "https://github.com/heinanX/chatApp-sockets",
       "image": "/chatapp.png"
     },
     {
@@ -21,14 +21,8 @@
     {
       "projectName": "Coconut",
       "programingLanguages": "ReactJS, NodeJS, Stripe, MongoDB",
-      "link": "https://examensarbete.vercel.app",
+      "link": "https://github.com/SaraPellnor/Examensarbete",
       "image": "/coconut.png"
-    },
-    {
-      "projectName": "name",
-      "programingLanguages": "languages",
-      "link": "link",
-      "image": "/portfolio.png"
     }
   ]
 }
