@@ -55,7 +55,7 @@ const ConnectActive = () => {
             }
             className="hover:text-pink-300"
           />
-          <a href="mailto:sara.pellnor@gmail.com?subject=Your%20Subject&body=Your%20Message">
+          <a href="mailto:sara.ahlquist@gmail.com?subject=Your%20Subject&body=Your%20Message">
             {" "}
             <MdOutlineAlternateEmail className="hover:text-pink-300" />
           </a>
